@@ -1,5 +1,5 @@
 # The goal of this script is to automate the process of vote counting and determining a winner in an election. 
-# Import necessary modules for the creation of a python script that analyzes the votes and calculate the required values.
+# The first step in the process is to import necessary modules for the creation of a python script that analyzes the votes and calculate the required values.
 # Modules were provided in the starter file. 
 
 import csv
@@ -23,7 +23,7 @@ candidate_votes = {} # a dictionary to store names of candidates along with thei
 
 # Winning Candidate and Winning Count Tracker
 
-winning_candidate = ""
+winning_candidate = "" # This is a variable with an empty string which will later be used to store the name of the winning candidate.
 winning_count = 0
 
 # Open the CSV file and process it (provided in the starter file)
@@ -55,7 +55,7 @@ with open(file_to_load) as election_data:
 
         # If the candidate's name is not already in the candidate list, add them
         # The first step is to check if the name exists in the dictionary created.
-        # If not, the name will be added to the list. 
+        # If not, the name will be added. 
 
         if not (candidate_name in candidate_votes): # checks the existance of the name in the list 
             candidate_votes[candidate_name] = 0 # adds the name to the dictionary and sets the initial vote to 0

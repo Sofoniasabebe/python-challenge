@@ -1,4 +1,4 @@
-# The initial step in the process of analyzing the provided financial records of the company is identify dependencies needed.
+# The initial step in the process of analyzing the provided financial records of the company is to identify dependencies needed.
 # The identified dependencies/code libraries allow for proper runtime in the script's source code. 
 # For this particular project, the dependencies are provided in the PyBank Homework Starter File. 
 
@@ -20,7 +20,7 @@ profit_loss_change = []
 average_of_profit_loss_change = []
 month_of_change = []
 greatest_profit_increase = ["", 0]  # Variable set in a way that can combine a string and a numerical value.
-greatest_profit_decrease = ["", float("inf")] # The "inf" represents an infinaitely large number. 
+greatest_profit_decrease = ["", float("inf")] # The "inf" represents an infinitely large number. 
 
 # Opening and reading the csv file:
 # Code provided in the starter file.
@@ -37,7 +37,7 @@ with open(file_to_load) as financial_data:
     first_row = next(reader)
 
     # Track the total and net change. 
-    total_months = total_months + 1 # This will help keep track of the total by adding it to the initial value as the upcomin loop starts to count through the dataset. 
+    total_months = total_months + 1 # This will help keep track of the total by adding it to the initial value as the upcoming loop starts to count through the dataset. 
     total_net = total_net + int(first_row[1]) #This code basically adds the value from the second column of the first row, converted to an integer, to the total_net which was initially set to 0.
     previous_net = int(first_row[1])
 
@@ -60,7 +60,7 @@ with open(file_to_load) as financial_data:
         net_change = current_value - previous_net # subtracting the previous_net from current value
         previous_net = int(row[1])
         average_of_profit_loss_change.append(net_change) # adds the net_change to keep track of the change in profit/loss
-        month_of_change.append(row[1]) # keeps track of months for each change is profit/loss
+        month_of_change.append(row[1]) # keeps track of months for each change in profit/loss
 
         # Calculate the greatest increase in profits (month and amount)
 
@@ -68,14 +68,14 @@ with open(file_to_load) as financial_data:
             greatest_profit_increase[1] = net_change
             greatest_profit_increase[0] = row[0] # updates the month
 
-        # # Calculate the greatest decrease in losses (month and amount)
+        # Calculate the greatest decrease in losses (month and amount)
 
         if net_change < greatest_profit_decrease[1]:
             greatest_profit_decrease[1] = net_change
             greatest_profit_decrease[0] = row[0] 
 
 # Calculate the average net change accross the months
-# I calculated the total sum of the changes and divided them by th enumber of changes. 
+# I calculated the total sum of the changes and divided them by the number of changes. 
 
 net_average_change = sum(average_of_profit_loss_change) / len(average_of_profit_loss_change)
 

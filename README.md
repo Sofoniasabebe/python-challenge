@@ -18,7 +18,7 @@ A a Python script that analyzes the records to calculate each of the following v
 
 * The greatest decrease in profits (date and amount) over the entire period
 
-The final script both prints the analysis to the terminal and exports a text file with the results.
+The final script prints the analysis to the terminal and exports a text file with the results.
 
 The script automated a mechanism to gain insights into the company's finances. 
 

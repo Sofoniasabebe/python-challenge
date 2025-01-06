@@ -6,7 +6,18 @@ Analysis of a company's financial records and modernizing the vote-counting proc
 In this part of the challenge, the task was to create a Python script to analyze the financial records of a given company. 
 A financial dataset called budget_data.csv was provided. The dataset is composed of two columns: "Date" and "Profit/Losses".
 
-A a Python script that analyzes the records to calculate each of the following values was created:
+The initial step in the process of analyzing the provided financial records of the company is to identify dependencies needed.
+The identified dependencies/code libraries allow for proper runtime in the script's source code. 
+For this particular project, the dependencies were provided in a PyBank Homework Starter File.
+
+The second step was identifying the source file/dataset to work from and the output file path where the results of the analysis were to be populated.
+The file paths for both the input and output files were also provided in the starter file. 
+
+Variables were then defined to track the financial data. The first two variables were provided in the starter file. Four more variables were coined from the project instructions.
+
+The variable for greatest_profit_increase was set in a way that can combine a string and a numerical value. 
+
+Then, a Python script that analyzes the records to calculate each of the following values was created:
 
 * The total number of months included in the dataset
 
@@ -25,6 +36,11 @@ The script automated a mechanism to gain insights into the company's finances.
 ## PyPoll
 
 In this Challenge, the task was to help a small, rural town modernize its vote-counting process.
+The goal of this script was to automate the process of vote counting and determining a winner in an election. 
+The first step in the process was to import necessary modules for the creation of a python script that analyzes the votes and calculate the required values.
+Modules were provided in the starter file.
+
+The next step was to determine/map out the file path for the dataset and the output of the analysis. The paths were also provided in the starter file.
 
 A set of poll data called election_data.csv was provided for the challenge. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". The task was to create a Python script that analyzes the votes and calculates each of the following values:
 
@@ -37,6 +53,8 @@ A set of poll data called election_data.csv was provided for the challenge. The 
 * The total number of votes each candidate won
 
 * The winner of the election based on popular vote
+
+To do the necessary calculations and find the above values, lists and dictionaries to track candidate names and vote counts were defined. While the list stored the names of the candidates, the dictionary stored names of candidates along with their corresponding votes. For the winning candidate and winning count tracker, a variable with an empty string which was later  used to store the name of the winning candidate was created. 
 
 The final script allowed the automation of the process of analyzing election data by cunting votes, calculating the peercentages of votes per candidate, and determining the winner of the election. 
 
